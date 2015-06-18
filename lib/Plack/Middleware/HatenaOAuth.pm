@@ -174,8 +174,8 @@ your Plack app.
 =item consumer_key
 =item consumer_secret
 
-    consumer_key    => 'vUarxVrr0NHiTg==',
-    consumer_secret => 'RqbbFaPN2ubYqL/+0F5gKUe7dHc=',
+    consumer_key    => 'vUarxVrr0NHiTg=='
+    consumer_secret => 'RqbbFaPN2ubYqL/+0F5gKUe7dHc='
 
 A consumer key and consumer secret registered on L<the setting page
 for a developer|http://www.hatena.ne.jp/oauth/develop>.  Follow the
@@ -185,9 +185,13 @@ for registration.
 
 =item login_path
 
+    login_path => '/login'
+
 An endpoint for OAuth login, which is added to your Plack app.
 
 =item ua
+
+    ua => LWP::UserAgent->new(...)
 
 A user agent to make remote access to the OAuth server.
 
