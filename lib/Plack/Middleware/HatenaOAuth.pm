@@ -162,4 +162,46 @@ Plack::Middleware::HatenaOAuth - provide a login endpoint for Hatena OAuth
       $app;
   };
 
+=head1 DESCRIPTION
+
+This middleware adds an endpoint for OAuth authorization of Hatena to
+your Plack app.
+
+=head1 CONFIGURATIONS
+
+=over 4
+
+=item consumer_key
+=item consumer_secret
+
+    consumer_key    => 'vUarxVrr0NHiTg==',
+    consumer_secret => 'RqbbFaPN2ubYqL/+0F5gKUe7dHc=',
+
+A consumer key and consumer secret registered on L<the setting page
+for a developer|http://www.hatena.ne.jp/oauth/develop>.  Follow the
+instructions on L<the documentation on the devloper
+center|http://developer.hatena.ne.jp/en/documents/auth/apis/oauth/consumer>
+for registration.
+
+=item login_path
+
+An endpoint for OAuth login, which is added to your Plack app.
+
+=item ua
+
+A user agent to make remote access to the OAuth server.
+
+=back
+
+=head1 LICENSE
+
+Copyright (C) Hatena Co., Ltd..
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=head1 AUTHOR
+
+INA Lintaro E<lt>tarao.gnn@gmail.comE<gt>
+
 =cut
