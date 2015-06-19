@@ -9,7 +9,7 @@ Plack::Middleware::HatenaOAuth - provide a login endpoint for Hatena OAuth
 
     my $app = sub {
         my $env = shift;
-        my $session = Plack::Ssession->new($env);
+        my $session = Plack::Session->new($env);
         my $user_info = $session->get('hatenaoauth_user_info') || {};
         my $user_name = $user_info->{url_name};
         return [
@@ -42,7 +42,7 @@ your Plack app.
 # CONFIGURATIONS
 
 - consumer\_key
-=item consumer\_secret
+- consumer\_secret
 
         consumer_key    => 'vUarxVrr0NHiTg=='
         consumer_secret => 'RqbbFaPN2ubYqL/+0F5gKUe7dHc='

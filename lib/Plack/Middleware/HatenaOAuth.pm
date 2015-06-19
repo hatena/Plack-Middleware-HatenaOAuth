@@ -172,6 +172,7 @@ your Plack app.
 =over 4
 
 =item consumer_key
+
 =item consumer_secret
 
     consumer_key    => 'vUarxVrr0NHiTg=='
