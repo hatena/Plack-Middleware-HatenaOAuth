@@ -164,8 +164,8 @@ Plack::Middleware::HatenaOAuth - provide a login endpoint for Hatena OAuth
 
 =head1 DESCRIPTION
 
-This middleware adds an endpoint for OAuth authorization of Hatena to
-your Plack app.
+This middleware adds an endpoint to start Hatena OAuth authentication
+flow to your Plack app.
 
 =head1 CONFIGURATIONS
 
@@ -179,8 +179,8 @@ your Plack app.
     consumer_secret => 'RqbbFaPN2ubYqL/+0F5gKUe7dHc='
 
 A consumer key and consumer secret registered on L<the setting page
-for a developer|http://www.hatena.ne.jp/oauth/develop>.  Follow the
-instructions on L<the documentation on the devloper
+for developers|http://www.hatena.ne.jp/oauth/develop>.  Follow the
+instructions in L<the documentation on the devloper
 center|http://developer.hatena.ne.jp/en/documents/auth/apis/oauth/consumer>
 for registration.
 
@@ -194,7 +194,7 @@ An endpoint for OAuth login, which is added to your Plack app.
 
     ua => LWP::UserAgent->new(...)
 
-A user agent to make remote access to the OAuth server.
+A user agent to make a remote access to the OAuth server.
 
 =back
 
