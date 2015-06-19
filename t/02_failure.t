@@ -20,14 +20,6 @@ my $app = builder {
     sub { [ 200, [ 'Content-Type' => 'text/plain' ], [ 'OK' ] ] };
 };
 
-sub bad_request {
-    return mock_guard 'LWP::UserAgent', {
-        request => sub {
-            return HTTP::Response->new(400, '', [], 'Bad request');
-        },
-    };
-}
-
 test_psgi
     app => $app,
     client => sub {
@@ -62,7 +54,6 @@ test_psgi
         };
 
         subtest 'Authorize' => sub {
-            my $local = bad_request;
             my $req = HTTP::Request->new(GET => "http://localhost$auth_path");
             ok my $res = $cb->($req);
             is $g->call_count('LWP::UserAgent', 'request'), 3;
