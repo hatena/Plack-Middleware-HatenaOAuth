@@ -157,8 +157,9 @@ Plack::Middleware::HatenaOAuth - provide a login endpoint for Hatena OAuth
       enable 'Plack::Middleware::HatenaOAuth',
            consumer_key       => 'vUarxVrr0NHiTg==',
            consumer_secret    => 'RqbbFaPN2ubYqL/+0F5gKUe7dHc=',
-           login_path         => '/login';
-           # ua                 => LWP::UserAgent->new(...);
+           login_path         => '/login',
+         # ua                 => LWP::UserAgent->new(...), # optional
+           ;
       $app;
   };
 
