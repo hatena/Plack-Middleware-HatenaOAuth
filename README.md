@@ -74,4 +74,6 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
+mechairoi <ttsujikawa@gmail.com>
+
 INA Lintaro <tarao.gnn@gmail.com>

@@ -1,7 +1,7 @@
 {
    "abstract" : "provide a login endpoint for Hatena OAuth",
    "author" : [
-      "INA Lintaro <tarao.gnn@gmail.com>"
+      "mechairoi <ttsujikawa@gmail.com>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v2.3.0, CPAN::Meta::Converter version 2.143240",
@@ -65,5 +65,8 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "version" : "0.01",
+   "x_contributors" : [
+      "tarao <tarao.gnn@gmail.com>"
+   ]
 }

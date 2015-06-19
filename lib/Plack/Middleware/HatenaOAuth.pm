@@ -207,6 +207,8 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
+mechairoi E<lt>ttsujikawa@gmail.comE<gt>
+
 INA Lintaro E<lt>tarao.gnn@gmail.comE<gt>
 
 =cut
