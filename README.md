@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/hatena/Plack-Middleware-HatenaOAuth.svg?branch=master)](https://travis-ci.org/hatena/Plack-Middleware-HatenaOAuth)
 # NAME
 
 Plack::Middleware::HatenaOAuth - provide a login endpoint for Hatena OAuth
