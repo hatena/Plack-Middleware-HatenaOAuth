@@ -65,6 +65,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/hatena/Plack-Middleware-HatenaOAuth/issues"
+      },
+      "homepage" : "https://github.com/hatena/Plack-Middleware-HatenaOAuth",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/hatena/Plack-Middleware-HatenaOAuth.git",
+         "web" : "https://github.com/hatena/Plack-Middleware-HatenaOAuth"
+      }
+   },
    "version" : "0.01",
    "x_contributors" : [
       "tarao <tarao.gnn@gmail.com>"
