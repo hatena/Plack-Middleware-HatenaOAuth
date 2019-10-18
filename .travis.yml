@@ -1,10 +1,13 @@
 language: perl
 perl:
+  - "5.10"
+  - "5.20"
   - "5.24"
   - "5.26"
   - "5.28"
   - "5.30"
 before_install:
+  - "perlbrew use $TRAVIS_PERL_VERSION || perlbrew install $TRAVIS_PERL_VERSION"
   - "cpanm --notest Minilla"
 script:
   - "minil test"
