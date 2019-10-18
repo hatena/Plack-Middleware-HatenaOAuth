@@ -7,7 +7,7 @@ perl:
   - "5.28"
   - "5.30"
 before_install:
-  - "perlbrew use $TRAVIS_PERL_VERSION || (perlbrew install --notest $TRAVIS_PERL_VERSION && perlbrew switch $TRAVIS_PERL_VERSION)"
+  - "perlbrew use $TRAVIS_PERL_VERSION || (perlbrew install --notest $TRAVIS_PERL_VERSION && perlbrew use $TRAVIS_PERL_VERSION)"
   - printenv
   - "perl --version"
   - "cpanm --version"
