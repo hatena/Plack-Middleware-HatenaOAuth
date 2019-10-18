@@ -3,6 +3,10 @@ requires 'Plack::Middleware::Session';
 requires 'OAuth::Lite::Consumer';
 requires 'JSON::XS';
 
+on 'configure' => sub {
+    requires 'Module::Build::Tiny';
+};
+
 on 'test' => sub {
     requires 'Test::Base';
     requires 'Test::More';
