@@ -17,7 +17,7 @@ use constant +{
     REQUEST_TOKEN_PATH => q{/oauth/initiate},
     ACCESS_TOKEN_PATH  => q{/oauth/token},
     AUTHORIZE_PATH     => q{https://www.hatena.ne.jp/oauth/authorize},
-    USER_INFO_URL      => q{http://n.hatena.com/applications/my.json},
+    USER_INFO_URL      => q{https://n.hatena.ne.jp/applications/my.json},
 };
 
 sub prepare_app {
