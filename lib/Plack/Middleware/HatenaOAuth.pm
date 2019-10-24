@@ -2,7 +2,7 @@ package Plack::Middleware::HatenaOAuth;
 use strict;
 use warnings;
 
-our $VERSION   = '0.01';
+our $VERSION   = '0.02';
 
 use parent 'Plack::Middleware';
 use Plack::Util::Accessor qw(consumer_key consumer_secret consumer login_path);
