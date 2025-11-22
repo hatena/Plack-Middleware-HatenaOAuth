@@ -11,15 +11,19 @@ jobs:
     strategy:
       matrix:
         perl-version:
-          - '5.10'
+          - '5.14-buster'
           - latest
     container:
       image: perl:${{ matrix.perl-version }}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - name: perl version
         run: perl -V
       - name: Install minilla
         run: cpanm -n Minilla
+      - name: Preinstall OAuth::Lite without tests # workaround for OpenSSL 3 issues
+        run: cpanm -n --notest OAuth::Lite::Consumer
+      - name: Mark workspace as safe for git
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: minil test
         run: minil test
